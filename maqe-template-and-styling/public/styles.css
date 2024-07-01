@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: gainsboro;
+}
+
+.container {
+    margin: 100px;
+}
+
+.header{
+    margin-left: 50px;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 10px
+}
+
+.author:hover, .author:hover + .post {
+    background-color: #89CFF0;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2px;
+    padding: 10px 20px;
+    background-color: #FFFFFF;
+}
+
+.author img {
+    border-radius: 50%;
+    margin-right: 5px;
+    height: 50px;
+    width: 50px;
+}
+
+#author-name {
+    color: orange;
+    margin-right: 5px;
+}
+
+#author-post-created {
+    color: grey;
+    margin-right: 5px;
+}
+
+.post {
+    display: flex;
+    justify-content: flex-start;
+    background-color: #FFFFFF;
+    padding: 20px;
+}
+
+.post img {
+    margin-right: 20px;
+}
+
+.post span {
+    font-size: 20px;
+}

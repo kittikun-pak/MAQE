@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAQE Forum</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>MAQE Forum</h1>
+            <p>Your current timezone is: Asia/Bangkok</p>
+        </div>
+        <div class="content">
+            <ul>
+                <% postsMapped.forEach(post => { %>
+                    <li>
+                        <div class="author">
+                            <img src= <%= post.avatar_url%>>
+                            <span id="author-name"><b><%= post.name %></b></span>
+                            <span id="author-post-created"> posted on <%= post.created_at%></span>
+                        </div>
+                        <div class="post">
+                            <img src= <%= post.image_url%>>
+                            <div>
+                                <span><b><%= post.title %></b></span>
+                                <p><%= post.body %></p>
+                            </div>
+                        </div>
+    
+                    </li>
+                <% }); %>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
