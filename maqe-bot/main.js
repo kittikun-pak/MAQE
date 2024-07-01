@@ -8,7 +8,6 @@ var rl = readline.createInterface({
 rl.question("Please input bot command: \n", function (command) {
     var commandSet = /(W\d+|R)/g;
     var commands = command.match(commandSet);
-    console.log(commands);
     var x = 0;
     var y = 0;
     var direction = 'N';
@@ -66,7 +65,6 @@ rl.question("Please input bot command: \n", function (command) {
                 case cmd.startsWith('W'):
                     var steps = parseInt(cmd.substring(1));
                     moveForward(steps);
-                    console.log(x, y);
                     break;
                 default:
                     break;

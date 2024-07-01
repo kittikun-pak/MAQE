@@ -70,7 +70,6 @@ rl.question(`Please input bot command: \n`, (command) => {
                 case cmd.startsWith('W'):
                     const steps = parseInt(cmd.substring(1))
                     moveForward(steps)
-                    console.log(x, y)
                     break
                 default:
                     break
